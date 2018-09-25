@@ -1,0 +1,22 @@
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:200,300,400,700');
+
+//set transition
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}
+
+//set text-color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+//variables
+$primary-color: #fff;
+$secondary-color: #333;
+$primary-font: 'Playfair display', serif;
+$secondary-font: 'Raleway', sans-serif;
