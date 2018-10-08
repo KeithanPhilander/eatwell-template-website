@@ -11,16 +11,33 @@ body {
 h1,
 h2,
 h3 {
-  margin: 0; }
-  h1.lg-heading,
-  h2.lg-heading,
-  h3.lg-heading {
+  margin: 0;
+  color: #333; }
+  h1.lg-heading-light,
+  h2.lg-heading-light,
+  h3.lg-heading-light {
+    color: #333;
     font-size: 5rem;
     font-family: "Playfair display", serif;
     font-weight: 700; }
-  h1.sm-heading,
-  h2.sm-heading,
-  h3.sm-heading {
+  h1.sm-heading-light,
+  h2.sm-heading-light,
+  h3.sm-heading-light {
+    color: #333;
+    margin-bottom: 3rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400; }
+  h1.lg-heading-dark,
+  h2.lg-heading-dark,
+  h3.lg-heading-dark {
+    color: #fff;
+    font-size: 5rem;
+    font-family: "Playfair display", serif;
+    font-weight: 700; }
+  h1.sm-heading-dark,
+  h2.sm-heading-dark,
+  h3.sm-heading-dark {
+    color: #fff;
     margin-bottom: 3rem;
     font-family: "Raleway", sans-serif;
     font-weight: 400; }
@@ -28,14 +45,13 @@ h3 {
   h2.md-heading,
   h3.md-heading {
     font-family: "Playfair display", serif;
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 300; }
   h1.xs-heading,
   h2.xs-heading,
   h3.xs-heading {
     font-family: "Raleway", sans-serif;
     font-size: 1.1rem;
-    letter-spacing: 0.4rem;
     font-weight: 300; }
   h1.faded,
   h2.faded,
@@ -47,6 +63,10 @@ h3 {
     color: #FDA404;
     font-size: 1.2rem;
     margin-top: 40px; }
+  h1.wide,
+  h2.wide,
+  h3.wide {
+    letter-spacing: .4rem; }
 
 a {
   font-size: .9rem;
@@ -57,7 +77,8 @@ a {
   text-decoration: none; }
 
 p {
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  margin: 1rem auto; }
   p.faded {
     color: #b3b3b3; }
   p.bold {
@@ -75,12 +96,12 @@ img {
   font-size: 1rem; }
   .btn.btn-yellow {
     background-color: #FDA404;
+    color: #fff;
+    font-size: .8rem;
     border: none;
     cursor: pointer; }
   .btn.btn-small {
-    padding: .8em 1em;
-    font-size: .8rem;
-    color: #fff; }
+    padding: .8em 1em; }
 
 header {
   position: relative;
@@ -165,11 +186,13 @@ header {
   .specials h2 {
     width: 40%;
     margin: 0 auto;
-    padding-bottom: 4rem; }
+    padding-bottom: 1rem; }
   .specials .wrapper {
-    width: 60%;
-    height: 30rem;
+    width: 70%;
+    max-height: 34rem;
     margin: 0 auto; }
+    .specials .wrapper p {
+      padding: 0 2rem; }
     .specials .wrapper img {
       width: 90%;
       margin: 0 auto; }

@@ -6,6 +6,8 @@ $(document).ready(function() {
     speed: 300,
     slidesToShow: 3,
     slidesToScroll: 3,
+    adaptiveHeight: true,
+    accessibility: false,
     responsive: [
       {
         breakpoint: 1024,

@@ -120,13 +120,17 @@ header {
   h2 {
     width: 40%;
     margin: 0 auto;
-    padding-bottom: 4rem;
+    padding-bottom: 1rem;
   }
 
   .wrapper {
-    width: 60%;
-    height: 30rem;
+    width: 70%;
+    max-height: 34rem;
     margin: 0 auto;
+
+    p {
+      padding: 0 2rem;
+    }
 
     img{
       width: 90%;
