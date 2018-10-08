@@ -1,0 +1,136 @@
+@import 'config';
+@import 'base';
+
+//header
+header {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/header.jpg);
+  background-size: cover;
+  background-position: center;
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,.6);
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    height: 6rem;
+    line-height: 6rem;
+    width: 80%;
+
+    .logo {
+      display: flex;
+      flex-flow: wrap;
+      justify-content: flex-start;
+      width: 40%;
+      h2 {
+        font-family: $secondary-font;
+        font-size: 1.4rem;
+        font-weight: 400;
+      }
+    }
+
+    .menu-nav {
+      display: flex;
+      flex-flow: row;
+      justify-content: flex-start;
+      padding: 0;
+      margin: 0;
+      width: 60%;
+
+      .nav-item {
+        margin-left: 1.7rem;
+        list-style: none;
+        display: inline;
+
+        .nav-link {
+          font-size: 0.8rem;
+          font-weight: 600;
+          letter-spacing: .2rem;
+          color: darken(set-text-color($secondary-color), 30);
+
+          &:hover {
+            @include easeOut;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .textbox {
+    margin-top: 25vh;
+    text-align: center;
+
+    button {
+      color: set-text-color($secondary-color);
+      background: rgba(0,0,0,0);
+      cursor: pointer;
+
+      &:hover {
+        @include easeOut;
+        background: rgba(250,250,250,1);
+        color: #333;
+      }
+    }
+  }
+}
+
+
+//about us
+
+.about {
+  color: set-text-color($primary-color);
+  display: grid;
+  grid-template-columns: 40% 40%;
+  align-content: center;
+  justify-content: center;
+  padding: 150px 0;
+
+  .col-2 {
+    margin: 0 auto;
+  }
+
+  p {
+    padding-right: 100px;
+  }
+
+}
+
+
+//specials
+
+.specials {
+  color: set-text-color($primary-color);
+  text-align: center;
+  padding: 150px 0;
+
+  h2 {
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+  }
+
+  .wrapper {
+    width: 60%;
+    height: 30rem;
+    margin: 0 auto;
+
+    img{
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}

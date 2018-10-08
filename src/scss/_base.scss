@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    color: $primary-color;
+    height: 100%;
+    margin: 0;
+    line-height: 1.5;
+}
+  
+h1,
+h2,
+h3 {
+    margin: 0;
+  
+    &.lg-heading {
+        font-size: 5rem;
+        font-family: $primary-font;
+        font-weight: 700;
+    }
+  
+    &.sm-heading {
+        margin-bottom: 3rem;
+        font-family: $secondary-font;
+        font-weight: 400;
+    }
+  
+    &.md-heading {
+        font-family: $primary-font;
+        font-size: 4rem;
+        font-weight: 300;
+    }
+  
+    &.xs-heading {
+        font-family: $secondary-font;
+        font-size: 1.1rem;
+        letter-spacing: 0.4rem;
+        font-weight: 300;
+    }
+    &.faded {
+        color: lighten($secondary-color, 50);
+    }
+
+    &.yellow-heading {
+        color: $yellow;
+        font-size: 1.2rem;
+        margin-top: 40px;
+    }
+}
+  
+a {
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    font-weight: 300;
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+  
+p {
+    font-family: $secondary-font;
+    &.faded {
+        color: lighten($secondary-color, 50);
+    }
+    &.bold {
+        font-weight: 700;
+        font-family: $primary-font;
+        font-size: 1.4rem;
+    }
+}
+  
+//img styles
+img {
+    width: 100%;
+    margin: 0 auto;
+}
+  
+//button styles
+.btn {
+    padding: 1em 2.4em;
+    font-family: $primary-font;
+    font-size: 1rem;
+
+    &.btn-yellow {
+        background-color: $yellow;
+        border: none;
+        cursor: pointer;
+    }
+
+    &.btn-small {
+        padding: .8em 1em;
+        font-size: .8rem;
+        color: $primary-color;
+    }
+}
+  

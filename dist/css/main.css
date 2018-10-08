@@ -30,15 +30,23 @@ h3 {
     font-family: "Playfair display", serif;
     font-size: 4rem;
     font-weight: 300; }
-  h1.faded-heading,
-  h2.faded-heading,
-  h3.faded-heading {
+  h1.xs-heading,
+  h2.xs-heading,
+  h3.xs-heading {
     font-family: "Raleway", sans-serif;
     font-size: 1.1rem;
     letter-spacing: 0.4rem;
-    color: #b3b3b3;
-    font-weight: 300;
-    text-transform: uppercase; }
+    font-weight: 300; }
+  h1.faded,
+  h2.faded,
+  h3.faded {
+    color: #b3b3b3; }
+  h1.yellow-heading,
+  h2.yellow-heading,
+  h3.yellow-heading {
+    color: #FDA404;
+    font-size: 1.2rem;
+    margin-top: 40px; }
 
 a {
   font-size: .9rem;
@@ -49,12 +57,30 @@ a {
   text-decoration: none; }
 
 p {
-  color: #b3b3b3;
   font-family: "Raleway", sans-serif; }
+  p.faded {
+    color: #b3b3b3; }
+  p.bold {
+    font-weight: 700;
+    font-family: "Playfair display", serif;
+    font-size: 1.4rem; }
 
 img {
   width: 100%;
   margin: 0 auto; }
+
+.btn {
+  padding: 1em 2.4em;
+  font-family: "Playfair display", serif;
+  font-size: 1rem; }
+  .btn.btn-yellow {
+    background-color: #FDA404;
+    border: none;
+    cursor: pointer; }
+  .btn.btn-small {
+    padding: .8em 1em;
+    font-size: .8rem;
+    color: #fff; }
 
 header {
   position: relative;
@@ -120,11 +146,6 @@ header {
         background: #fafafa;
         color: #333; }
 
-.btn {
-  padding: 17px 36px;
-  font-family: "Playfair display", serif;
-  font-size: 1rem; }
-
 .about {
   color: #333;
   display: grid;
@@ -141,14 +162,14 @@ header {
   color: #333;
   text-align: center;
   padding: 150px 0; }
-  .specials p {
-    font-size: 1.4rem;
+  .specials h2 {
     width: 40%;
     margin: 0 auto;
     padding-bottom: 4rem; }
   .specials .wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
     width: 60%;
+    height: 30rem;
     margin: 0 auto; }
+    .specials .wrapper img {
+      width: 90%;
+      margin: 0 auto; }
