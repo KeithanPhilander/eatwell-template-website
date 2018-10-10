@@ -12,6 +12,7 @@ h1,
 h2,
 h3 {
   margin: 0;
+  padding: 0;
   color: #333; }
   h1.lg-heading-light,
   h2.lg-heading-light,
@@ -61,8 +62,7 @@ h3 {
   h2.yellow-heading,
   h3.yellow-heading {
     color: #FDA404;
-    font-size: 1.2rem;
-    margin-top: 40px; }
+    font-size: 1.2rem; }
   h1.wide,
   h2.wide,
   h3.wide {
@@ -78,7 +78,9 @@ a {
 
 p {
   font-family: "Raleway", sans-serif;
-  margin: 1rem auto; }
+  color: #333;
+  margin: 0;
+  padding: 0; }
   p.faded {
     color: #b3b3b3; }
   p.bold {
@@ -93,7 +95,9 @@ img {
 .btn {
   padding: 1em 2.4em;
   font-family: "Playfair display", serif;
-  font-size: 1rem; }
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none; }
   .btn.btn-yellow {
     background-color: #FDA404;
     color: #fff;
@@ -102,6 +106,16 @@ img {
     cursor: pointer; }
   .btn.btn-small {
     padding: .8em 1em; }
+  .btn.btn-tab {
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+    color: #b3b3b3;
+    letter-spacing: .2rem;
+    border: 2px solid; }
+    .btn.btn-tab.active {
+      color: #333;
+      background-color: #fff;
+      border: 2px solid #333; }
 
 header {
   position: relative;
@@ -196,3 +210,31 @@ header {
     .specials .wrapper img {
       width: 90%;
       margin: 0 auto; }
+
+.menu {
+  text-align: center;
+  padding: 150px 0; }
+  .menu h2 {
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 3rem; }
+  .menu button {
+    margin: 3rem .5rem; }
+  .menu .menu-container {
+    display: grid;
+    text-align: left;
+    width: 60%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin: 0 auto;
+    height: auto; }
+    .menu .menu-container .menu-item {
+      display: grid;
+      text-align: left;
+      grid-template-columns: 2fr 8fr;
+      height: auto; }
+      .menu .menu-container .menu-item img {
+        margin-right: 1rem;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%; }
