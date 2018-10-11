@@ -25,10 +25,16 @@ $(document).ready(function() {
           slidesToScroll: 1
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
+
+
+  //active button
+  $(".btn-tab").click(function() {
+    let tab = $(this).attr('id');
+    $(".btn-tab").removeClass('active');
+    $('#' + tab).addClass('active');
+  });
 });
+
 
