@@ -61,7 +61,7 @@ h3 {
 
     &.yellow-heading {
         color: $yellow;
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     &.wide {
         letter-spacing: .4rem;
@@ -124,12 +124,14 @@ img {
         color: lighten($secondary-color, 50);
         letter-spacing: .2rem;
         border: 2px solid;
+        @include easeOut;
+    }
 
-        &.active {
-            color: $secondary-color;
-            background-color: #fff;
-            border: 2px solid $secondary-color;
-        }
+    &.active {
+        @include easeOut;
+        color: $secondary-color;
+        background-color: #fff;
+        border: 2px solid $secondary-color;
     }
 }
   
