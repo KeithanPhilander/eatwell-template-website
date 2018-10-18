@@ -193,7 +193,16 @@ header {
 //news 
 .news {
   text-align: center;
-  padding-bottom: 150px;
+  padding-bottom: 0px;
+
+  .news-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    .news-item {
+      padding: 20px 0;
+    }
+  }
 
   h2 {
     width: 40%;
@@ -205,4 +214,5 @@ header {
     width: 80%;
     margin: 0 auto;
   }
+  
 }

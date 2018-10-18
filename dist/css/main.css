@@ -249,7 +249,13 @@ header {
 
 .news {
   text-align: center;
-  padding-bottom: 150px; }
+  padding-bottom: 0px; }
+  .news .news-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .news .news-wrapper .news-item {
+      padding: 20px 0; }
   .news h2 {
     width: 40%;
     margin: 0 auto;
