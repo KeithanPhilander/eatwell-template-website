@@ -246,3 +246,14 @@ header {
         width: 100px;
         height: 100px;
         border-radius: 50%; }
+
+.news {
+  text-align: center;
+  padding-bottom: 150px; }
+  .news h2 {
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 3rem; }
+  .news img {
+    width: 80%;
+    margin: 0 auto; }

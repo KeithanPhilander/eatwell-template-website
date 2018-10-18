@@ -188,3 +188,21 @@ header {
     }
   }
 }
+
+
+//news 
+.news {
+  text-align: center;
+  padding-bottom: 150px;
+
+  h2 {
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
+
+  img{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
