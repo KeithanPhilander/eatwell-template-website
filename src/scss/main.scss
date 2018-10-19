@@ -96,7 +96,6 @@ header {
   color: set-text-color($primary-color);
   display: grid;
   grid-template-columns: 40% 40%;
-  align-content: center;
   justify-content: center;
   padding: 150px 0;
 
@@ -116,7 +115,6 @@ header {
 
 .specials {
   color: set-text-color($primary-color);
-  text-align: center;
   padding: 150px 0;
 
   h2 {
@@ -192,8 +190,8 @@ header {
 
 //news 
 .news {
-  text-align: center;
   padding-bottom: 0px;
+  width: 100%;
 
   .news-wrapper {
     width: 100%;
@@ -213,6 +211,15 @@ header {
   img{
     width: 80%;
     margin: 0 auto;
-  }
+  } 
+}
+
+.gallery-wrapper {
+  display: grid;
+  width: 100%;
+  margin: 0 auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+
   
 }

@@ -119,6 +119,9 @@ img {
     background-color: #fff;
     border: 2px solid #333; }
 
+.center {
+  text-align: center; }
+
 header {
   position: relative;
   z-index: 2;
@@ -188,7 +191,6 @@ header {
   color: #333;
   display: grid;
   grid-template-columns: 40% 40%;
-  align-content: center;
   justify-content: center;
   padding: 150px 0; }
   .about .col-2 {
@@ -199,7 +201,6 @@ header {
 
 .specials {
   color: #333;
-  text-align: center;
   padding: 150px 0; }
   .specials h2 {
     width: 40%;
@@ -248,7 +249,6 @@ header {
         border-radius: 50%; }
 
 .news {
-  text-align: center;
   padding-bottom: 0px; }
   .news .news-wrapper {
     width: 100%;
@@ -263,3 +263,10 @@ header {
   .news img {
     width: 80%;
     margin: 0 auto; }
+
+.gallery-wrapper {
+  display: grid;
+  width: 70%;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem; }
