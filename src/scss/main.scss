@@ -190,7 +190,7 @@ header {
 
 //news 
 .news {
-  padding-bottom: 0px;
+  padding-bottom: 150px;
   width: 100%;
 
   .news-wrapper {
@@ -214,12 +214,81 @@ header {
   } 
 }
 
-.gallery-wrapper {
-  display: grid;
-  width: 100%;
-  margin: 0 auto;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem;
 
-  
+//gallery
+.gallery {
+  padding-bottom: 150px;
+  width: 100%;
+
+  .gallery-wrapper {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+
+    img{
+      margin: 0 auto;
+    } 
+  }
+}
+
+
+
+//contact
+
+.contact {
+  padding-bottom: 150px;
+  width: 100%;
+
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem;
+
+    form {
+      margin: 0;
+      input, textarea, button {
+        display: block;
+        margin: 1rem 0;
+      }
+
+      input, textarea {
+        width: 90% !important;
+        margin-left: 3rem;
+        background: #E6E6E6;
+        border: none;
+        padding: 1rem;
+        font-size: 18px;
+        font-family: $secondary-font;
+        resize: none;
+      }
+
+      button {
+        margin-left: 3rem;
+      }
+    }
+
+    aside {
+      margin: 0;
+      figure {
+        margin: 0 auto;
+        margin-top: 3rem;
+        width: 350px;
+
+        figcaption {
+          margin-top: 1rem;
+          line-height: 1.6rem;
+        }
+      }
+    }
+  }
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 150px;
 }

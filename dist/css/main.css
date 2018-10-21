@@ -2,11 +2,15 @@
 * {
   box-sizing: border-box; }
 
-body {
+body, html {
   color: #fff;
+  width: 100%;
   height: 100%;
   margin: 0;
-  line-height: 1.5; }
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden; }
 
 h1,
 h2,
@@ -121,6 +125,15 @@ img {
 
 .center {
   text-align: center; }
+
+figcaption {
+  color: #000;
+  text-align: left;
+  font-family: "Raleway", sans-serif; }
+  figcaption a {
+    text-transform: lowercase;
+    color: #FDA404;
+    font-weight: bold; }
 
 header {
   position: relative;
@@ -249,7 +262,8 @@ header {
         border-radius: 50%; }
 
 .news {
-  padding-bottom: 0px; }
+  padding-bottom: 150px;
+  width: 100%; }
   .news .news-wrapper {
     width: 100%;
     display: grid;
@@ -264,9 +278,54 @@ header {
     width: 80%;
     margin: 0 auto; }
 
-.gallery-wrapper {
-  display: grid;
-  width: 70%;
-  align-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1rem; }
+.gallery {
+  padding-bottom: 150px;
+  width: 100%; }
+  .gallery .gallery-wrapper {
+    display: grid;
+    width: 80%;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem; }
+    .gallery .gallery-wrapper img {
+      margin: 0 auto; }
+
+.contact {
+  padding-bottom: 150px;
+  width: 100%; }
+  .contact .contact-wrapper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 1rem; }
+    .contact .contact-wrapper form {
+      margin: 0; }
+      .contact .contact-wrapper form input, .contact .contact-wrapper form textarea, .contact .contact-wrapper form button {
+        display: block;
+        margin: 1rem 0; }
+      .contact .contact-wrapper form input, .contact .contact-wrapper form textarea {
+        width: 90% !important;
+        margin-left: 3rem;
+        background: #E6E6E6;
+        border: none;
+        padding: 1rem;
+        font-size: 18px;
+        font-family: "Raleway", sans-serif;
+        resize: none; }
+      .contact .contact-wrapper form button {
+        margin-left: 3rem; }
+    .contact .contact-wrapper aside {
+      margin: 0; }
+      .contact .contact-wrapper aside figure {
+        margin: 0 auto;
+        margin-top: 3rem;
+        width: 350px; }
+        .contact .contact-wrapper aside figure figcaption {
+          margin-top: 1rem;
+          line-height: 1.6rem; }
+
+#map {
+  height: 400px;
+  width: 100%;
+  margin-bottom: 150px; }

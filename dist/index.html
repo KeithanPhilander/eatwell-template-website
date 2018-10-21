@@ -227,13 +227,59 @@
       <img src="img/gallery6.jpg" alt="gallery6" class="gallery-img">
     </div>
   </section>
-  <section class="contact">
-
+  <section class="contact center">
+    <h1 class="md-heading">Get In Touch</h1>
+    <h2 class="xs-heading faded">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h2>
+    <div class="contact-wrapper">
+      <form action="#">
+        <input type="text" name="name" id="name" placeholder="Name">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your message"></textarea>
+        <button class="btn btn-yellow">Send Message</button>
+      </form>
+      <aside>
+        <figure>
+            <img src="img/chef.jpg" alt="chef">
+            <figcaption>
+              Address: <br>
+              121 Street. Melbourne Victoria<br>
+              3000 Australia<br>
+              <br>
+              Phone:<br>
+              90 987 65 44<br>
+              <br>
+              Email: <br>
+              <a href="#">info@yoursite.com</a>
+            </figcaption>
+        </figure>
+      </aside>
+    </div>
   </section>
+
+  <section id="map"></section>
+
+  <footer>
+
+  </footer>
 
 
 
   <script type="text/javascript" src="../src/plugins/slick/slick.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    //map function 
+    function initMap() {
+    let location = {lat: -24.363, lng: 131.044};
+    let map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 4, 
+      center: location
+    });
+    let marker = new google.maps.Marker({
+      position: location, 
+      map: map
+    });
+  }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAR3ZV3zms02eYe-nsgFPByXqkROA6OiWI&callback=initMap"></script>
 </body>
 </html>
