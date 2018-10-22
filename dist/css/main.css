@@ -72,7 +72,15 @@ h3 {
   h3.wide {
     letter-spacing: .4rem; }
 
-a {
+.main-nav {
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  font-weight: 300;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.secondary-navlink {
   font-size: .9rem;
   letter-spacing: .1rem;
   font-weight: 300;
@@ -82,7 +90,6 @@ a {
 
 p {
   font-family: "Raleway", sans-serif;
-  color: #333;
   margin: 0;
   padding: 0; }
   p.faded {
@@ -327,5 +334,25 @@ header {
 
 #map {
   height: 400px;
-  width: 100%;
-  margin-bottom: 150px; }
+  width: 100%; }
+
+footer {
+  background: #333;
+  color: #fff; }
+  footer .col-4-wrapper {
+    width: 70%;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 40% 20% 20% 20%); }
+    footer .col-4-wrapper ul {
+      list-style: none; }
+      footer .col-4-wrapper ul li {
+        text-decoration: none;
+        line-height: 3rem; }
+        footer .col-4-wrapper ul li a {
+          color: #fff;
+          font-weight: 400; }
+        footer .col-4-wrapper ul li a:hover {
+          color: #FDA404; }

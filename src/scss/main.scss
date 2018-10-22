@@ -290,5 +290,36 @@ header {
 #map {
   height: 400px;
   width: 100%;
-  margin-bottom: 150px;
+}
+
+footer {
+  background: $secondary-color;
+  color: set-text-color($secondary-color);
+
+  .col-4-wrapper {
+    width: 70%;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 40% 20% 20% 20%);
+
+    ul {
+      list-style: none;
+
+      li {
+        text-decoration: none;
+        line-height: 3rem;
+
+        a {
+          color: set-text-color($secondary-color);
+          font-weight: 400;
+        }
+
+        a:hover {
+          color: $yellow;
+        }
+      }
+    }
+  }
 }
