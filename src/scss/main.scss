@@ -134,6 +134,7 @@ header {
 
     p {
       padding: .2rem 2rem;
+      color: set-text-color($primary-color);
     }
 
     img{
@@ -194,7 +195,8 @@ header {
   width: 100%;
 
   .news-wrapper {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     .news-item {
@@ -220,6 +222,12 @@ header {
   padding-bottom: 150px;
   width: 100%;
 
+  h2 {
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
+
   .gallery-wrapper {
     display: grid;
     width: 80%;
@@ -240,6 +248,12 @@ header {
 .contact {
   padding-bottom: 150px;
   width: 100%;
+
+  h2 {
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 3rem;
+  }
 
   .contact-wrapper {
     display: grid;
@@ -297,23 +311,37 @@ footer {
   color: set-text-color($secondary-color);
 
   .col-4-wrapper {
-    width: 70%;
+    width: 78%;
     font-size: 1rem;
     margin: 0 auto;
-    padding: 100px;
+    padding: 100px 50px;
     display: grid;
+    grid-gap: 2rem;
     grid-template-columns: repeat(4, 40% 20% 20% 20%);
+
+    p {
+      font-size: 14px;
+    }
+
+    .footer-info {
+      padding: 2rem 1rem 0 0;
+    }
 
     ul {
       list-style: none;
-
+      margin-left: 0;
+      padding: 0;
+      text-align: left;
       li {
         text-decoration: none;
         line-height: 3rem;
+        text-align: left;
 
         a {
           color: set-text-color($secondary-color);
           font-weight: 400;
+          font-size: 14px;
+          text-transform: none;
         }
 
         a:hover {

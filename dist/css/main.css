@@ -233,7 +233,8 @@ header {
     .specials .wrapper .yellow-heading {
       padding-top: 1rem; }
     .specials .wrapper p {
-      padding: .2rem 2rem; }
+      padding: .2rem 2rem;
+      color: #333; }
     .specials .wrapper img {
       width: 90%;
       margin: 0 auto; }
@@ -272,7 +273,8 @@ header {
   padding-bottom: 150px;
   width: 100%; }
   .news .news-wrapper {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
     .news .news-wrapper .news-item {
@@ -288,6 +290,10 @@ header {
 .gallery {
   padding-bottom: 150px;
   width: 100%; }
+  .gallery h2 {
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 3rem; }
   .gallery .gallery-wrapper {
     display: grid;
     width: 80%;
@@ -300,6 +306,10 @@ header {
 .contact {
   padding-bottom: 150px;
   width: 100%; }
+  .contact h2 {
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 3rem; }
   .contact .contact-wrapper {
     display: grid;
     grid-template-columns: 60% 40%;
@@ -340,19 +350,30 @@ footer {
   background: #333;
   color: #fff; }
   footer .col-4-wrapper {
-    width: 70%;
+    width: 78%;
     font-size: 1rem;
     margin: 0 auto;
-    padding: 100px;
+    padding: 100px 50px;
     display: grid;
+    grid-gap: 2rem;
     grid-template-columns: repeat(4, 40% 20% 20% 20%); }
+    footer .col-4-wrapper p {
+      font-size: 14px; }
+    footer .col-4-wrapper .footer-info {
+      padding: 2rem 1rem 0 0; }
     footer .col-4-wrapper ul {
-      list-style: none; }
+      list-style: none;
+      margin-left: 0;
+      padding: 0;
+      text-align: left; }
       footer .col-4-wrapper ul li {
         text-decoration: none;
-        line-height: 3rem; }
+        line-height: 3rem;
+        text-align: left; }
         footer .col-4-wrapper ul li a {
           color: #fff;
-          font-weight: 400; }
+          font-weight: 400;
+          font-size: 14px;
+          text-transform: none; }
         footer .col-4-wrapper ul li a:hover {
           color: #FDA404; }
