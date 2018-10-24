@@ -360,7 +360,8 @@ footer {
     footer .col-4-wrapper p {
       font-size: 14px; }
     footer .col-4-wrapper .footer-info {
-      padding: 2rem 1rem 0 0; }
+      padding: 2rem 1rem 0 0;
+      font-size: 16px; }
     footer .col-4-wrapper ul {
       list-style: none;
       margin-left: 0;
