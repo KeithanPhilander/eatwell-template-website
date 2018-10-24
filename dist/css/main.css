@@ -160,31 +160,28 @@ header {
     height: 100vh;
     background: rgba(0, 0, 0, 0.6); }
   header .menu {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: space-around;
     margin: 0 auto;
     height: 6rem;
     line-height: 6rem;
     width: 80%; }
     header .menu .logo {
-      display: flex;
-      flex-flow: wrap;
-      justify-content: flex-start;
-      width: 40%; }
+      width: 100%;
+      margin-left: 0; }
       header .menu .logo h2 {
         font-family: "Raleway", sans-serif;
         color: #fff;
         font-size: 1.4rem;
         font-weight: 400; }
     header .menu .menu-nav {
-      display: flex;
-      flex-flow: row;
-      justify-content: flex-start;
+      display: inline-block;
       padding: 0;
       margin: 0;
-      width: 60%; }
+      width: 70%; }
       header .menu .menu-nav .nav-item {
-        margin-left: 1.7rem;
+        margin-right: 1.7rem;
         list-style: none;
         display: inline; }
         header .menu .menu-nav .nav-item .nav-link {
@@ -195,6 +192,8 @@ header {
           header .menu .menu-nav .nav-item .nav-link:hover {
             transition: all 0.5s ease-out;
             color: #fff; }
+      header .menu .menu-nav .nav-item:nth-child(7) {
+        margin-right: 0; }
   header .textbox {
     margin-top: 25vh;
     text-align: center; }

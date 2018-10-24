@@ -23,18 +23,17 @@ header {
   }
 
   .menu {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    align-items: space-around;
     margin: 0 auto;
     height: 6rem;
     line-height: 6rem;
     width: 80%;
 
     .logo {
-      display: flex;
-      flex-flow: wrap;
-      justify-content: flex-start;
-      width: 40%;
+      width: 100%;
+      margin-left: 0;
       h2 {
         font-family: $secondary-font;
         color: $primary-color;
@@ -44,15 +43,13 @@ header {
     }
 
     .menu-nav {
-      display: flex;
-      flex-flow: row;
-      justify-content: flex-start;
+      display: inline-block;
       padding: 0;
       margin: 0;
-      width: 60%;
+      width: 70%;
 
       .nav-item {
-        margin-left: 1.7rem;
+        margin-right: 1.7rem;
         list-style: none;
         display: inline;
 
@@ -67,6 +64,10 @@ header {
             color: #fff;
           }
         }
+      }
+
+      .nav-item:nth-child(7) {
+        margin-right: 0;
       }
     }
   }
